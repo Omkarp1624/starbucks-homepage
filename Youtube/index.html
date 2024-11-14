@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="/Youtube/starbucks.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Rewards</a></li>
+                <li><a href="#">Gift Cards</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text>">
+                <h2><span>Brewing Moments</span><br>One Cup at a Time</h2>
+                <p>Starbucks is a global coffee house chain that has become synonymous with premium coffee culture. Founded in 1971 in Seattle, Washington, it began as a small store selling high-quality coffee beans and equipment before transforming into a coffee shop that serves a wide variety of beverages, including espresso-based drinks, teas, and refreshers.</p>
+                <a class = "anchor" href="#">Learn More</a>
+                <!-- <button>Learn More</button> -->
+            </div>
+            <div class="image">
+                <img src="/Youtube/1.png"
+                class="coffee">
+            </div>
+        </div>
+        <ul class="thumbnail">
+            <li><img src="/Youtube/1.png" onclick="imgchanger('1.png');circlecolorchanger('#eb7495')"></li>
+            <li><img src="/Youtube/2.png" onclick="imgchanger('2.png');circlecolorchanger('#037246')"></li>
+        </ul>
+        <ul class="social">
+            <li><img src="/Youtube/facebook.png"></li>
+            <li><img src="/Youtube/instagram.png"></li>
+            <li><img src="/Youtube/twitter.png"></li>
+        </ul>
+    </section>
+    <script type = "text/javascript">
+        function imgchanger(anything){
+            document.querySelector('.coffee').src=anything;
+        }
+        function circlecolorchanger(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+    
+</body>
+</html>
